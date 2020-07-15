@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.jhw.modules.bug'
+
+//mainClassName = 'com.jhw.modules.bug.Main'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13'
+        
+    implementation project(':utils')
+    implementation project(':clean-core')
+    implementation project(':clean-swing')
+    implementation project(':material-swing')
+}

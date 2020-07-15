@@ -73,8 +73,8 @@ public class BugInputPanel extends ModelPanel<Bug> {
             Bug bug = getNewModel();
             BugHandler.reportBug(bug);
             return bug;
-        } catch (Exception e) {
-            ExceptionHandler.getExceptionHandlerService().handleException(e);
+        } catch (Exception ex) {
+            ExceptionHandler.handleException(ex);
         }
         return null;
     }

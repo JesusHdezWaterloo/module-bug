@@ -6,8 +6,10 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import com.jhw.modules.bug.core.app.BugHandler;
 import com.jhw.swing.material.components.container.layout.VerticalLayoutContainer;
+import com.jhw.swing.material.components.labels._MaterialLabel;
 import com.jhw.swing.material.components.textarea._MaterialTextArea;
 import com.jhw.swing.material.components.textfield.validated._MaterialTextFieldStringNotEmpty;
+import com.jhw.swing.material.standars.MaterialFontRoboto;
 import com.jhw.swing.models.input.panels.ModelPanel;
 
 /**
@@ -31,13 +33,17 @@ public class BugInputPanel extends ModelPanel<Bug> {
     private void initComponents() {
         textAreaDescripcion = new _MaterialTextArea();
         textFieldBug = new _MaterialTextFieldStringNotEmpty();
+        labelHeader = new _MaterialLabel();
+        labelHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelHeader.setText("Reportar BUG");
+        labelHeader.setFont(MaterialFontRoboto.BOLD.deriveFont(24f)); // NOI18N
 
         textFieldBug.setHint("Bug encontrado");
         textFieldBug.setLabel("Bug");
         textAreaDescripcion.setTitledBorder("Descripción");
-        
-        VerticalLayoutContainer.builder vlc = VerticalLayoutContainer.builder();
 
+        VerticalLayoutContainer.builder vlc = VerticalLayoutContainer.builder();
+        vlc.add(labelHeader);
         vlc.add(textFieldBug);
         vlc.add(textAreaDescripcion);
         super.setComponent(vlc.build());
@@ -46,6 +52,7 @@ public class BugInputPanel extends ModelPanel<Bug> {
     // Variables declaration - do not modify
     private _MaterialTextArea textAreaDescripcion;
     private _MaterialTextFieldStringNotEmpty textFieldBug;
+    private _MaterialLabel labelHeader;
     // End of variables declaration                   
 
     @Override
@@ -66,8 +73,8 @@ public class BugInputPanel extends ModelPanel<Bug> {
             Bug bug = getNewModel();
             BugHandler.reportBug(bug);
             return bug;
-        } catch (Exception e) {
-            ExceptionHandler.getExceptionHandlerService().handleException(e);
+        } catch (Exception ex) {
+            ExceptionHandler.handleException(ex);
         }
         return null;
     }

@@ -3,9 +3,6 @@ package com.jhw.modules.bug.core.app;
 import com.clean.core.app.services.ExceptionHandler;
 import com.jhw.modules.bug.core.domain.Bug;
 import com.jhw.modules.bug.repo.BugRepoImpl;
-import com.jhw.utils.jackson.JACKSON;
-import java.io.File;
-import javax.imageio.ImageIO;
 
 /**
  *

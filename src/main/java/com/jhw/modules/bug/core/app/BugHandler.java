@@ -20,7 +20,7 @@ public class BugHandler {
             repo.write(bug);
             return bug;
         } catch (Exception e) {
-            ExceptionHandler.getExceptionHandlerService().handleException(e);
+            ExceptionHandler.handleException(e);
         }
         return null;
     }

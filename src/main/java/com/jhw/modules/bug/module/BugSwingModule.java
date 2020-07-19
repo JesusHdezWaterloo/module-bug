@@ -1,7 +1,7 @@
 package com.jhw.modules.bug.module;
 
 import com.clean.swing.app.AbstractSwingApplication;
-import com.clean.swing.app.AbstractSwingModule;
+import com.clean.swing.app.AbstractSwingMainModule;
 import com.clean.swing.app.dashboard.DashBoardSimple;
 import com.clean.swing.app.dashboard.DashboardConstants;
 import com.jhw.swing.material.standars.MaterialColors;
@@ -9,7 +9,7 @@ import com.jhw.swing.material.standars.MaterialIcons;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
-public class BugSwingModule implements AbstractSwingModule {
+public class BugSwingModule implements AbstractSwingMainModule {
 
     private final BugModuleNavigator navigator = new BugModuleNavigator();
 

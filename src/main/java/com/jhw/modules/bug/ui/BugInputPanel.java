@@ -9,7 +9,7 @@ import com.jhw.swing.material.components.container.layout.VerticalLayoutContaine
 import com.jhw.swing.material.components.labels._MaterialLabel;
 import com.jhw.swing.material.components.textarea._MaterialTextArea;
 import com.jhw.swing.material.components.textfield.validated._MaterialTextFieldStringNotEmpty;
-import com.jhw.swing.material.standars.MaterialFontRoboto;
+import com.jhw.swing.material.standards.MaterialFontRoboto;
 import com.jhw.swing.models.input.panels.ModelPanel;
 
 /**

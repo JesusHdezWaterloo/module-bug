@@ -1,6 +1,6 @@
 rootProject.name = 'Bug'
 
-include ':utils', ':clean-core', ':clean-swing', ':derivable-icons', ':material-standards', ':material-personalization', 'material-swing'
+include ':utils', ':clean-core', ':clean-swing', ':derivable-icons', ':material-standards', ':material-personalization', 'material-swing', 'material-model'
 
 project(':utils').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\Utils" as File
 project(':clean-core').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\CleanCoreFull" as File
@@ -11,3 +11,5 @@ project(':material-standards').projectDir = "E:\\Trabajos\\Projects\\GIT Project
 project(':material-personalization').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\Modulos Utils\\Personalization" as File
 
 project(':material-swing').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\MaterialSwing" as File
+
+project(':material-model').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\Material\\Model" as File

@@ -13,9 +13,16 @@ public class BugSwingModule implements AbstractSwingMainModule {
 
     private final BugModuleNavigator navigator = new BugModuleNavigator();
 
+    private BugSwingModule() {
+    }
+
+    public static BugSwingModule init() {
+        System.out.println("Iniciando 'Bug'");
+        return new BugSwingModule();
+    }
+
     @Override
     public void register(AbstractSwingApplication app) {
-        System.out.println("Creando 'Bug'");
         registerBug(app);
     }
 

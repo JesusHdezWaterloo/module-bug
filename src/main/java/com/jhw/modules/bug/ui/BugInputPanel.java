@@ -8,7 +8,7 @@ import com.jhw.modules.bug.core.app.BugHandler;
 import com.jhw.swing.material.components.container.layout.VerticalLayoutContainer;
 import com.jhw.swing.material.components.labels._MaterialLabel;
 import com.jhw.swing.material.components.textarea._MaterialTextArea;
-import com.jhw.swing.material.components.textfield.validated._MaterialTextFieldStringNotEmpty;
+import com.jhw.swing.material.components.textfield._MaterialTextField;
 import com.jhw.swing.material.standards.MaterialFontRoboto;
 import com.jhw.swing.models.input.panels.ModelPanel;
 
@@ -32,7 +32,7 @@ public class BugInputPanel extends ModelPanel<Bug> {
     @SuppressWarnings("unchecked")
     private void initComponents() {
         textAreaDescripcion = new _MaterialTextArea();
-        textFieldBug = new _MaterialTextFieldStringNotEmpty();
+        textFieldBug = new _MaterialTextField();
         labelHeader = new _MaterialLabel();
         labelHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelHeader.setText("Reportar BUG");
@@ -51,7 +51,7 @@ public class BugInputPanel extends ModelPanel<Bug> {
 
     // Variables declaration - do not modify
     private _MaterialTextArea textAreaDescripcion;
-    private _MaterialTextFieldStringNotEmpty textFieldBug;
+    private _MaterialTextField textFieldBug;
     private _MaterialLabel labelHeader;
     // End of variables declaration                   
 

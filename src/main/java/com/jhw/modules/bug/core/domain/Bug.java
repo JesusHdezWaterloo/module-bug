@@ -3,6 +3,7 @@ package com.jhw.modules.bug.core.domain;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.awt.image.BufferedImage;
 import java.io.Serializable;
+import javax.validation.constraints.NotEmpty;
 
 /**
  *
@@ -10,6 +11,7 @@ import java.io.Serializable;
  */
 public class Bug implements Serializable {
 
+    @NotEmpty(message = "El nombre no puede estar vacío")
     private String bug;
     private String description;
 

@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 import com.jhw.modules.bug.core.app.BugHandler;
 import com.jhw.swing.material.components.container.layout.VerticalLayoutContainer;
 import com.jhw.swing.material.components.labels._MaterialLabel;
-import com.jhw.swing.material.components.textarea._MaterialTextArea;
+import com.jhw.swing.material.components.textarea.prepared._MaterialTextAreaDescripcion;
 import com.jhw.swing.material.components.textfield._MaterialTextField;
 import com.jhw.swing.material.standards.MaterialFontRoboto;
 import com.jhw.swing.models.input.panels.ModelPanel;
@@ -31,7 +31,7 @@ public class BugInputPanel extends ModelPanel<Bug> {
 
     @SuppressWarnings("unchecked")
     private void initComponents() {
-        textAreaDescripcion = new _MaterialTextArea();
+        textAreaDescripcion = new _MaterialTextAreaDescripcion();
         textFieldBug = new _MaterialTextField();
         labelHeader = new _MaterialLabel();
         labelHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -40,7 +40,6 @@ public class BugInputPanel extends ModelPanel<Bug> {
 
         textFieldBug.setHint("Bug encontrado");
         textFieldBug.setLabel("Bug");
-        textAreaDescripcion.setTitledBorder("Descripción");
 
         VerticalLayoutContainer.builder vlc = VerticalLayoutContainer.builder();
         vlc.add(labelHeader);
@@ -50,7 +49,7 @@ public class BugInputPanel extends ModelPanel<Bug> {
     }
 
     // Variables declaration - do not modify
-    private _MaterialTextArea textAreaDescripcion;
+    private _MaterialTextAreaDescripcion textAreaDescripcion;
     private _MaterialTextField textFieldBug;
     private _MaterialLabel labelHeader;
     // End of variables declaration                   

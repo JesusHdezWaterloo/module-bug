@@ -13,3 +13,13 @@ project(':material-personalization').projectDir = "E:\\Trabajos\\Projects\\GIT P
 project(':material-swing').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\MaterialSwing" as File
 
 project(':material-model').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\Material\\Model" as File
+
+
+include 'module-default-config', 'material-notification'
+project(':module-default-config').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\Modulos Utils\\DefaultConfiguration" as File
+project(':material-notification').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\Material\\Notifications" as File
+
+include 'module-export', 'module-files'
+project(':module-export').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\Modulos Utils\\Export" as File
+project(':module-files').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\Modulos Utils\\Files" as File
+

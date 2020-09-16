@@ -6,10 +6,14 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import com.jhw.modules.bug.core.app.BugHandler;
 import com.jhw.swing.material.components.container.layout.VerticalLayoutContainer;
-import com.jhw.swing.material.components.labels._MaterialLabel;
-import com.jhw.swing.material.components.textarea.prepared._MaterialTextAreaDescripcion;
-import com.jhw.swing.material.components.textfield._MaterialTextField;
+import com.jhw.swing.material.components.labels.MaterialLabel;
+import com.jhw.swing.material.components.labels.MaterialLabelsFactory;
+import com.jhw.swing.material.components.textarea.MaterialTextArea;
+import com.jhw.swing.material.components.textarea.MaterialTextAreaFactory;
+import com.jhw.swing.material.components.textfield.MaterialTextFactory;
+import com.jhw.swing.material.components.textfield.MaterialTextFieldIcon;
 import com.jhw.swing.material.standards.MaterialFontRoboto;
+import com.jhw.swing.material.standards.MaterialIcons;
 import com.jhw.swing.models.input.panels.ModelPanel;
 
 /**
@@ -31,9 +35,11 @@ public class BugInputPanel extends ModelPanel<Bug> {
 
     @SuppressWarnings("unchecked")
     private void initComponents() {
-        textAreaDescripcion = new _MaterialTextAreaDescripcion();
-        textFieldBug = new _MaterialTextField();
-        labelHeader = new _MaterialLabel();
+        textAreaDescripcion = MaterialTextAreaFactory.buildDescripcion();
+        textFieldBug = MaterialTextFactory.buildIcon();
+        textFieldBug.setIcon(MaterialIcons.BUG_REPORT);
+
+        labelHeader = MaterialLabelsFactory.build();
         labelHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelHeader.setText("Reportar BUG");
         labelHeader.setFont(MaterialFontRoboto.BOLD.deriveFont(24f)); // NOI18N
@@ -45,19 +51,19 @@ public class BugInputPanel extends ModelPanel<Bug> {
         vlc.add(labelHeader);
         vlc.add(textFieldBug);
         vlc.add(textAreaDescripcion);
-        super.setComponent(vlc.build());
+        super.add(vlc.build());
     }
 
     // Variables declaration - do not modify
-    private _MaterialTextAreaDescripcion textAreaDescripcion;
-    private _MaterialTextField textFieldBug;
-    private _MaterialLabel labelHeader;
+    private MaterialTextArea textAreaDescripcion;
+    private MaterialTextFieldIcon<String> textFieldBug;
+    private MaterialLabel labelHeader;
     // End of variables declaration                   
 
     @Override
     public Bug getNewModel() {
-        String bug = textFieldBug.getText();
-        String desc = textAreaDescripcion.getText();
+        String bug = textFieldBug.getObject();
+        String desc = textAreaDescripcion.getObject();
         return new Bug(bug, desc, shot);
     }
 

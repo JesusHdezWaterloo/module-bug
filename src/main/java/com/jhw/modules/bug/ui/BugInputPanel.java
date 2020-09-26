@@ -9,12 +9,12 @@ import com.jhw.swing.material.components.container.layout.VerticalLayoutContaine
 import com.jhw.swing.material.components.labels.MaterialLabel;
 import com.jhw.swing.material.components.labels.MaterialLabelsFactory;
 import com.jhw.swing.material.components.textarea.MaterialTextArea;
-import com.jhw.swing.material.components.textarea.MaterialTextAreaFactory;
 import com.jhw.swing.material.components.textfield.MaterialTextFactory;
 import com.jhw.swing.material.components.textfield.MaterialTextFieldIcon;
 import com.jhw.swing.material.standards.MaterialFontRoboto;
 import com.jhw.swing.material.standards.MaterialIcons;
 import com.jhw.swing.models.input.panels.ModelPanel;
+import com.jhw.swing.prepared.textarea.MaterialPreparedTextAreaFactory;
 
 /**
  *
@@ -35,7 +35,7 @@ public class BugInputPanel extends ModelPanel<Bug> {
 
     @SuppressWarnings("unchecked")
     private void initComponents() {
-        textAreaDescripcion = MaterialTextAreaFactory.buildDescripcion();
+        textAreaDescripcion = MaterialPreparedTextAreaFactory.buildDescripcion();
         textFieldBug = MaterialTextFactory.buildIcon();
         textFieldBug.setIcon(MaterialIcons.BUG_REPORT);
 

@@ -1,4 +1,4 @@
-package com.jhw.modules.bug.core.domain;
+package com.jhw.module.util.bug.core.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.awt.image.BufferedImage;

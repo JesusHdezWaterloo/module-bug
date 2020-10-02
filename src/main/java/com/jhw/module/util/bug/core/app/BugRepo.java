@@ -1,6 +1,6 @@
-package com.jhw.modules.bug.core.app;
+package com.jhw.module.util.bug.core.app;
 
-import com.jhw.modules.bug.core.domain.Bug;
+import com.jhw.module.util.bug.core.domain.Bug;
 
 /**
  *

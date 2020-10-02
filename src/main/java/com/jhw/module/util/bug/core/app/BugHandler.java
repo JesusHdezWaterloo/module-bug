@@ -1,8 +1,8 @@
-package com.jhw.modules.bug.core.app;
+package com.jhw.module.util.bug.core.app;
 
 import com.clean.core.app.services.ExceptionHandler;
-import com.jhw.modules.bug.core.domain.Bug;
-import com.jhw.modules.bug.repo.BugRepoImpl;
+import com.jhw.module.util.bug.core.domain.Bug;
+import com.jhw.module.util.bug.repo.BugRepoImpl;
 
 /**
  *

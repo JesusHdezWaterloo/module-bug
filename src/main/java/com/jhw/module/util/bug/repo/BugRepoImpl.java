@@ -1,7 +1,7 @@
-package com.jhw.modules.bug.repo;
+package com.jhw.module.util.bug.repo;
 
-import com.jhw.modules.bug.core.app.BugRepo;
-import com.jhw.modules.bug.core.domain.Bug;
+import com.jhw.module.util.bug.core.app.BugRepo;
+import com.jhw.module.util.bug.core.domain.Bug;
 import com.jhw.utils.jackson.JACKSON;
 import java.io.File;
 import javax.imageio.ImageIO;

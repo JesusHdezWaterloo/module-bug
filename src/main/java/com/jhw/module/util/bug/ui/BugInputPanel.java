@@ -1,10 +1,10 @@
-package com.jhw.modules.bug.ui;
+package com.jhw.module.util.bug.ui;
 
 import com.clean.core.app.services.ExceptionHandler;
-import com.jhw.modules.bug.core.domain.Bug;
+import com.jhw.module.util.bug.core.domain.Bug;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import com.jhw.modules.bug.core.app.BugHandler;
+import com.jhw.module.util.bug.core.app.BugHandler;
 import com.jhw.swing.material.components.container.layout.VerticalLayoutContainer;
 import com.jhw.swing.material.components.labels.MaterialLabel;
 import com.jhw.swing.material.components.labels.MaterialLabelsFactory;

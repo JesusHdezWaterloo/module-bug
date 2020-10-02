@@ -1,4 +1,4 @@
-package com.jhw.modules.bug.module;
+package com.jhw.module.util.bug.module;
 
 import com.clean.swing.app.AbstractSwingApplication;
 import com.clean.swing.app.DefaultAbstractSwingMainModule;

@@ -1,8 +1,8 @@
 package com.jhw.module.util.bug.module;
 
-import com.clean.core.app.services.NavigationService;
+import com.root101.clean.core.app.services.NavigationService;
 import com.jhw.module.util.bug.ui.BugInputPanel;
-import com.jhw.swing.models.input.dialogs.DialogModelInput;
+import com.root101.swing.models.input.dialogs.DialogModelInput;
 
 /**
  *

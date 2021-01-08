@@ -1,20 +1,20 @@
 package com.jhw.module.util.bug.ui;
 
-import com.clean.core.app.services.ExceptionHandler;
+import com.root101.clean.core.app.services.ExceptionHandler;
 import com.jhw.module.util.bug.core.domain.Bug;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import com.jhw.module.util.bug.core.app.BugHandler;
-import com.jhw.swing.material.components.container.layout.VerticalLayoutContainer;
-import com.jhw.swing.material.components.labels.MaterialLabel;
-import com.jhw.swing.material.components.labels.MaterialLabelsFactory;
-import com.jhw.swing.material.components.textarea.MaterialTextArea;
-import com.jhw.swing.material.components.textfield.MaterialTextFactory;
-import com.jhw.swing.material.components.textfield.MaterialTextFieldIcon;
-import com.jhw.swing.material.standards.MaterialFontRoboto;
-import com.jhw.swing.material.standards.MaterialIcons;
-import com.jhw.swing.models.input.panels.ModelPanel;
-import com.jhw.swing.prepared.textarea.MaterialPreparedTextAreaFactory;
+import com.root101.swing.material.components.container.layout.VerticalLayoutContainer;
+import com.root101.swing.material.components.labels.MaterialLabel;
+import com.root101.swing.material.components.labels.MaterialLabelsFactory;
+import com.root101.swing.material.components.textarea.MaterialTextArea;
+import com.root101.swing.material.components.textfield.MaterialTextFactory;
+import com.root101.swing.material.components.textfield.MaterialTextFieldIcon;
+import com.root101.swing.material.standards.MaterialFontRoboto;
+import com.root101.swing.material.standards.MaterialIcons;
+import com.root101.swing.models.input.panels.ModelPanel;
+import com.root101.swing.prepared.textarea.MaterialPreparedTextAreaFactory;
 
 /**
  *
